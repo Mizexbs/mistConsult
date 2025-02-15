@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <svg class="header-mini-logo">
+                <use href="./img/svgs.svg#header-mini-logo"></use>
+            </svg>
+
+            <div class="links">
+                <nav class="site-nav">
+                    <ul class="site-nav-list">
+                        <li class="site-nav-item"><a href="" class="site-nav-link active">Головна</a></li>
+                        <li class="site-nav-item"><a href="" class="site-nav-link">Послуги</a></li>
+                        <li class="site-nav-item"><a href="" class="site-nav-link">Контакти</a></li>
+                    </ul>
+                </nav>
+
+                <button class="site-btn" data-modal-open-hero>Замовити послугу</button>
+            </div>
+
+            <button type="button" class="burger-menu-btn js-open-menu" aria-expanded="false">
+                <svg width="40" height="40">
+                    <use href="./img/svgs.svg#burger-menu"></use>
+                </svg> 
+            </button>
+
+            <div class="menu js-menu-container" id="menu">
+                <div class="menu-header">
+                    <div class="container menu-container">
+                        <h2 class="menu-header-title">МІСТ КОНСАЛТ</h2>
+
+                        <button class="burger-menu-btn js-close-menu" type="button" aria-expanded="true">
+                            <svg width="40" height="40">
+                                <use href="./img/svgs.svg#close-btn-svg"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="container nav-wrapper-menu">
+                    <nav class="site-navigation-menu">
+                        <ul class="webpages-menu">
+                            <li class="webpages-list-item-menu"><a href="#" class="webpages-item-menu">Головна</a></li>
+                            <li class="webpages-item-menu"><a href="#" class="webpages-item-menu">Послуги</a></li>
+                            <li class="webpages-item-menu"><a href="#" class="webpages-item-menu">Контакти</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="contacts-wrapper-menu">
+                        <a href="tel:+380975555555" class="contacts-menu">
+                            <svg class="" width="24" height="24">
+                                <use href="./img/svgs.svg#icon-phone"></use>
+                            </svg>
+                            +38 (097) 555 55 55
+                        </a>
+                        
+                        <a href="mailto:mistconslat@gmail.com" class="contacts-menu">
+                            <svg class="" width="24" height="24">
+                                <use href="./img/svgs.svg#icon-mail"></use>
+                            </svg>
+                            mistconslat@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section class="hero-section section">
+            <div class="container hero-container">
+                <div class="hero-info">
+                    <svg class="hero-logo">
+                        <use href="./img/svgs.svg#logo"></use>
+                    </svg>
+
+                    <div class="hero-headings">
+                        <h2 class="hero-sub-title">Консалтингова компанія</h2>
+                        <h1 class="main-site-title">МІСТ КОНСАЛТ</h1>
+                        <p class="hero-moto">Між метою та результатом є Міст</p>
+                        <button class="site-btn hero-btn" type="button" data-modal-open>Замовити послугу</button>
+                    </div>
+                </div>
+
+                <div class="hero-contacts-container">
+                    <a href="tel:+380975555555" class="hero-contacts">
+                        <svg class="hero-contacts-svg-item">
+                            <use href="./img/svgs.svg#icon-phone"></use>
+                        </svg>
+                    
+                        <p class="hero-contacts-item">+38 (097) 555 55 55</p>
+                    </a>
+
+                    <a href="mailto:mistconslat@gmail.com" class="hero-contacts">
+                        <svg class="hero-contacts-svg-item">
+                            <use href="./img/svgs.svg#icon-mail"></use>
+                        </svg>
+                    
+                        <p class="hero-contacts-item">mistconslat@gmail.com</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Moto section -->
+        <section class="moto-section section">
+            <div class="container">
+                <ul class="moto-list">
+                    <li class="moto-list-item">
+                        <div class="symbol-border">
+                            <img src="./img/c2.png" alt="png" class="moto-section-card-img">
+                        </div>
+
+                        <div class="text-wrapper">
+                            <h3 class="moto-section-title">3 роки</h3>
+                            <p class="moto-section-desc">надаємо послуги в сфері земледіяльності</p>
+                        </div>
+                    </li>
+                    
+                    <li class="moto-list-item">
+                        <div class="symbol-border">
+                            <img src="./img/uc2.png" alt="png" class="moto-section-card-img">
+                        </div>
+
+                        <div class="text-wrapper">
+                            <h3 class="moto-section-title">200+</h3>
+                            <p class="moto-section-desc">клієнтів, які звернулись до нашої компанії</p>
+                        </div>
+                    </li>
+
+                    <li class="moto-list-item">
+                        <div class="symbol-border">
+                            <img src="./img/tabler_list.png" alt="png" class="moto-section-card-img">
+                        </div>
+
+                        <div class="text-wrapper">
+                            <h3 class="moto-section-title">500+ кейсів</h3>
+                            <p class="moto-section-desc">від наших клієнтів, які ми вирішили</p>
+                        </div>
+                    </li>
+
+                    <li class="moto-list-item">
+                        <div class="symbol-border">
+                            <img src="./img/bi2.png" alt="png" class="moto-section-card-img">
+                        </div>
+
+                        <div class="text-wrapper">
+                            <h3 class="moto-section-title">40+ послуг</h3>
+                            <p class="moto-section-desc">наша компанія пропонує своїм клієнтам</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Favours section -->
+        <section class="favours-section section">
+            <div class="container">
+                <h2 class="favours-section-title">Послуги</h2>
+                
+                <ul class="favours-cards">
+                    <li class="favours-cards-item">
+                        <img src="./img/zemelnividnosyny.png" alt="Земельні відносини" width="355" height="212" class="favours-cards-img">
+                        <h3 class="image-title">Земельні відносини</h3>
+                    </li>
+
+                    <li class="favours-cards-item">
+                        <img src="./img/mistobydyvannya.png" alt="Містобудівна діяльність" width="355" height="212" class="favours-cards-img">
+                        <h3 class="image-title">Містобудівна діяльність</h3>
+                    </li>
+
+                    <li class="favours-cards-item">
+                        <img src="./img/blago.png" alt="Благоустрій" width="355" height="212" class="favours-cards-img">
+                        <h3 class="image-title">Благоустрій</h3>
+                    </li>
+                </ul>
+
+                <div class="btn-div">
+                    <button class="site-btn favours-btn"><a href="#">Перейти до послуг</a></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About us section -->
+        <section class="about-us-section section">
+            <div class="container about-us-container">
+                <h2 class="about-us-section-title">Про компанію</h2>
+                <svg class="background-image">
+                    <use href="./img/svgs.svg#logo"></use>
+                </svg>
+
+                <ul class="about-us-list">
+                    <li class="about-us-list-li">
+                        <div class="circle"></div>
+                        <p class="about-us-list-item">Компанія Міст Консалт відзначається своєю відданістю меті - створення найзручнішого та найефективнішого механізму взаємодії між нашими клієнтами та різноманітними органами державної влади, місцевого самоврядування, різноманітними проектними організаціями та профільними підприємствами з метою комплексного вирішення складних завдань у сфері земельних відносин, містобудування та архітектури.</p>
+                    </li>
+
+                    <li class="about-us-list-li">
+                        <div class="circle"></div>
+                        <p class="about-us-list-item">Наші юристи, зі значним досвідом у цій галузі, відзначаються ретельним вивченням кожного питання та орієнтуванням на поставлені цілі, щоб підібрати максимально ефективний алгоритм роботи та забезпечити його поетапне втілення в життя. Ми готові виконати будь-яку складну задачу та гарантуємо своїм клієнтам високу якість послуг та підтримку на кожному етапі співпраці.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-container">
+                <p class="all-rights-reserved">©Mist Consult 2023. All rights reserved</p>
+
+                <ul class="footer-contacts">
+                    <li class="footer-contacts-item">
+                        <a href="tel:+380975555555" class="hero-contacts">
+                            <svg class="" width="24" height="24">
+                                <use href="./img/svgs.svg#icon-phone"></use>
+                            </svg>
+                        
+                            <p class="footer-contacts-item">+38 (097) 555 55 55</p>
+                        </a>
+                    </li>
+
+                    <li class="footer-contacts-item">
+                        <a href="mailto:mistconslat@gmail.com" class="hero-contacts">
+                            <svg class="" width="24" height="24">
+                                <use href="./img/svgs.svg#icon-mail"></use>
+                            </svg>
+                        
+                            <p class="footer-contacts-item">mistconslat@gmail.com</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <svg class="modal-svg">
+                <use href="./img/svgs.svg#modal-svg"></use>
+            </svg>
+
+            <button class="close-modal-btn" type="button" data-modal-close>
+                <svg class="close-btn-svg">
+                    <use href="./img/svgs.svg#close-btn-svg"></use>
+                </svg>
+            </button>
+
+            <h2 class="modal-title">Зацікавили послуги?</h2>
+            <p class="modal-moto">Введіть ваші контактні дані та ми <br> вам зателефонуєм</p>
+
+            <form action="#" class="modal-form">
+                <input type="username" placeholder="Ваше ім'я" class="modal-input">
+                <input type="phone" placeholder="+38 (ХХХ) ХХ ХХ" class="modal-input">
+
+                <button class="site-btn modal-window-btn">Замовити дзвінок</button>
+            </form>
+
+            <p class="contacts-moto">або зателефонуйте нам</p>
+            <a href="" class="modal-phone-link"><p class="modal-phone-number">+38 (099) 12 34 567</p></a>
+
+            <svg class="modal-svg-bottom">
+                <use href="./img/svgs.svg#modal-svg-2"></use>
+            </svg>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
