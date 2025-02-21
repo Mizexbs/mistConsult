@@ -52,5 +52,9 @@
 <symbol id="modal-svg-2" viewBox="0 0 16 32">
 <path fill="none" stroke="#29974e" style="stroke: var(--color1, #29974e)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.2286" d="M15.771-2.286c0 18.872-15.299 34.171-34.171 34.171s-34.171-15.299-34.171-34.171c0-18.872 15.299-34.171 34.171-34.171s34.171 15.299 34.171 34.171z"></path>
 </symbol>
+
+<symbol id="icon-chevron-down" viewBox="0 0 32 32">
+<path fill="none" stroke="#fcfcfc" style="stroke: var(--color1, #fcfcfc)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M8 12l8 8 8-8"></path>
+</symbol>
   </defs>
 </svg>
