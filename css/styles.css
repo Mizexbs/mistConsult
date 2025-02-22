@@ -923,6 +923,7 @@ h1, h2, h3, h4, h5, h6, p{
 
     @media screen and (min-width: 768px){
         padding-top: 177px;
+        background-color: var(--color-bg);
     }
 
     @media screen and (min-width: 1440px){
@@ -1020,7 +1021,7 @@ h1, h2, h3, h4, h5, h6, p{
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     background: linear-gradient(360deg, rgba(87, 87, 87, 0.42) 0%, rgba(87, 87, 87, 0.21) 12.81%, rgba(87, 87, 87, 0) 33.33%, rgba(255, 255, 255, 0) 100%);
-    background-color: var(--color-bg);
+    background-color: var(--color-white);
 
     @media screen and (min-width: 768px){
         padding: 40px;
