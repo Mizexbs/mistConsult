@@ -21,13 +21,23 @@
             <div class="links">
                 <nav class="site-nav">
                     <ul class="site-nav-list">
-                        <li class="site-nav-item"><a href="./index.html" class="site-nav-link active">Головна</a></li>
-                        <li class="site-nav-item"><a href="" class="site-nav-link">Послуги</a></li>
-                        <li class="site-nav-item"><a href="" class="site-nav-link">Контакти</a></li>
+                        <li class="site-nav-item"><a href="./index.html" class="site-nav-link">Головна</a></li>
+                        <li class="site-nav-item"><a href="" class="site-nav-link active">Послуги</a></li>
+                        <li class="site-nav-item"><a href="./contacts.html" class="site-nav-link">Контакти</a></li>
                     </ul>
                 </nav>
 
-                <button class="site-btn" data-modal-open-hero>Замовити послугу</button>
+                <button class="site-btn" data-modal-open>Замовити послугу</button>
+
+                <div class="header-nav-contacts">
+                    <a href="tel:+380975555555" class="contacts-nav-menu">
+                        +38 (097) 555 55 55
+                    </a>
+                    
+                    <a href="mailto:mistconslat@gmail.com" class="contacts-nav-menu">
+                        mistconsult@gmail.com
+                    </a>
+                </div>
             </div>
 
             <button type="button" class="burger-menu-btn js-open-menu" aria-expanded="false">
@@ -54,7 +64,7 @@
                         <ul class="webpages-menu">
                             <li class="webpages-list-item-menu"><a href="./index.html" class="webpages-item-menu">Головна</a></li>
                             <li class="webpages-item-menu"><a href="#" class="webpages-item-menu">Послуги</a></li>
-                            <li class="webpages-item-menu"><a href="#" class="webpages-item-menu">Контакти</a></li>
+                            <li class="webpages-item-menu"><a href="./contacts.html" class="webpages-item-menu">Контакти</a></li>
                         </ul>
                     </nav>
 
@@ -70,7 +80,7 @@
                             <svg class="" width="24" height="24">
                                 <use href="./img/svgs.svg#icon-mail"></use>
                             </svg>
-                            mistconslat@gmail.com
+                            mistconsult@gmail.com
                         </a>
                     </div>
                 </div>
@@ -88,7 +98,12 @@
 
                 <ul class="favours-page-list">
                     <li class="favours-page-list-item">
-                        <img src="./img/zemelnividnosyny.png" alt="Земельні відносини" class="favours-page-list-item-png">
+                        <picture>
+                            <source srcSet="./img/favours-page-img/zemlya-desc.png 1x, ./img/favours-page-img/zemlya-desc2x.png 2x" type="image/png" media="(min-width: 1440px)">
+                            <source srcSet="./img/favours-page-img/zemlya-tab.png 1x, ./img/favours-page-img/zemlya-tab2x.png 2x" type="image/png" media="(min-width: 768px)">
+                            <source srcSet="./img/favours-page-img/zemlya-mob.png 1x, ./img/favours-page-img/zemlya-mob2x.png 2x" type="image/png" media="(max-width: 767px)">
+                            <img src="./img/zemelnividnosyny.png" alt="Земельні відносини" class="favours-page-list-item-png">
+                        </picture>
 
                         <div class="card-title-wrapper">
                             <h3 class="favours-page-list-item-title">Земельні відносини:</h3>
@@ -105,11 +120,16 @@
                             <li class="favours-page-cards-item">Оформлення права оренди земельних ділянок (Укладання договорів оренди земельних ділянок);</li>
                         </ul>
 
-                        <button class="site-btn cards-btn" type="button">Замовити послугу</button>
+                        <button class="site-btn cards-btn" type="button" data-modal-open>Замовити послугу</button>
                     </li>
 
                     <li class="favours-page-list-item">
-                        <img src="./img/mistobydyvannya.png" alt="Містобудування" class="favours-page-list-item-png">
+                        <picture>
+                            <source srcSet="./img/favours-page-img/mistobuduvannya-desc.png 1x, ./img/favours-page-img/mistobuduvannya-mob.desc2x.png 2x" type="image/png" media="(min-width: 1440px)">
+                            <source srcSet="./img/favours-page-img/mistobuduvannya-tab.png 1x, ./img/favours-page-img/mistobuduvannya-tab2x.png 2x" type="image/png" media="(min-width: 768px)">
+                            <source srcSet="./img/favours-page-img/mistobuduvannya-mob.png 1x, ./img/favours-page-img/mistobuduvannya-mob2x.png 2x" type="image/png" media="(max-width: 767px)">
+                            <img src="./img/mistobydyvannya.png" alt="Містобудування" class="favours-page-list-item-png">
+                        </picture>
 
                         <div class="card-title-wrapper">
                             <h3 class="favours-page-list-item-title">Містобудування:</h3>
@@ -126,11 +146,16 @@
                             <li class="favours-page-cards-item">Отримання містобудівних умов та обмежень;</li>
                         </ul>
 
-                        <button class="site-btn cards-btn" type="button">Замовити послугу</button>
+                        <button class="site-btn cards-btn" type="button" data-modal-open>Замовити послугу</button>
                     </li>
 
                     <li class="favours-page-list-item">
-                        <img src="./img/blago.png" alt="Благоустрій" class="favours-page-list-item-png">
+                        <picture>
+                            <source srcSet="./img/favours-page-img/blago-desc.png 1x, ./img/favours-page-img/blago-mob.desc2x.png 2x" type="image/png" media="(min-width: 1440px)">
+                            <source srcSet="./img/favours-page-img/blago-tab.png 1x, ./img/favours-page-img/blago-tab2x.png 2x" type="image/png" media="(min-width: 768px)">
+                            <source srcSet="./img/favours-page-img/blago-mob.png 1x, ./img/favours-page-img/blago-mob2x.png 2x" type="image/png" media="(max-width: 767px)">
+                            <img src="./img/blago.png" alt="Благоустрій" class="favours-page-list-item-png">
+                        </picture>
 
                         <div class="card-title-wrapper">
                             <h3 class="favours-page-list-item-title">Благоустрій:</h3>
@@ -147,7 +172,7 @@
                             <li class="favours-page-cards-item">Отримання дозволу на розміщення зовнішньої реклами;</li>
                         </ul>
 
-                        <button class="site-btn cards-btn" type="button">Замовити послугу</button>
+                        <button class="site-btn cards-btn" type="button" data-modal-open>Замовити послугу</button>
                     </li>
                 </ul>
             </div>
@@ -215,7 +240,7 @@
         </div>
     </div>
     <!-- Scripts -->
-    <script src="./js/modal.js"></script>
+    <script src="./js/favours-modal.js"></script>
     <script src="./js/menu.js"></script>
 </body>
 </html>

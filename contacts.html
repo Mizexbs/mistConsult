@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <svg class="header-mini-logo">
+                <use href="./img/svgs.svg#header-mini-logo"></use>
+            </svg>
+
+            <div class="links">
+                <nav class="site-nav">
+                    <ul class="site-nav-list">
+                        <li class="site-nav-item"><a href="./index.html" class="site-nav-link">Головна</a></li>
+                        <li class="site-nav-item"><a href="./favours.html" class="site-nav-link">Послуги</a></li>
+                        <li class="site-nav-item"><a href="" class="site-nav-link active">Контакти</a></li>
+                    </ul>
+                </nav>
+
+                <button class="site-btn" data-modal-open-hero>Замовити послугу</button>
+            </div>
+
+            <button type="button" class="burger-menu-btn js-open-menu" aria-expanded="false">
+                <svg width="40" height="40">
+                    <use href="./img/svgs.svg#burger-menu"></use>
+                </svg> 
+            </button>
+
+            <div class="menu js-menu-container" id="menu">
+                <div class="menu-header">
+                    <div class="container menu-container">
+                        <h2 class="menu-header-title">МІСТ КОНСАЛТ</h2>
+
+                        <button class="burger-menu-btn js-close-menu" type="button" aria-expanded="true">
+                            <svg width="40" height="40">
+                                <use href="./img/svgs.svg#close-btn-svg"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="container nav-wrapper-menu">
+                    <nav class="site-navigation-menu">
+                        <ul class="webpages-menu">
+                            <li class="webpages-list-item-menu"><a href="./index.html" class="webpages-item-menu">Головна</a></li>
+                            <li class="webpages-item-menu"><a href="./favours.html" class="webpages-item-menu">Послуги</a></li>
+                            <li class="webpages-item-menu"><a href="#" class="webpages-item-menu">Контакти</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="contacts-wrapper-menu">
+                        <a href="tel:+380975555555" class="contacts-menu">
+                            <svg class="" width="24" height="24">
+                                <use href="./img/svgs.svg#icon-phone"></use>
+                            </svg>
+                            +38 (097) 555 55 55
+                        </a>
+                        
+                        <a href="mailto:mistconslat@gmail.com" class="contacts-menu">
+                            <svg class="" width="24" height="24">
+                                <use href="./img/svgs.svg#icon-mail"></use>
+                            </svg>
+                            mistconslat@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+    </main>
+
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <svg class="modal-svg">
+                <use href="./img/svgs.svg#modal-svg"></use>
+            </svg>
+
+            <button class="close-modal-btn" type="button" data-modal-close>
+                <svg class="close-btn-svg">
+                    <use href="./img/svgs.svg#close-btn-svg"></use>
+                </svg>
+            </button>
+
+            <h2 class="modal-title">Зацікавили послуги?</h2>
+            <p class="modal-moto">Введіть ваші контактні дані та ми <br> вам зателефонуєм</p>
+
+            <form action="#" class="modal-form">
+                <input type="username" placeholder="Ваше ім'я" class="modal-input">
+                <input type="phone" placeholder="+38 (ХХХ) ХХ ХХ" class="modal-input">
+
+                <button class="site-btn modal-window-btn">Замовити дзвінок</button>
+            </form>
+
+            <p class="contacts-moto">або зателефонуйте нам</p>
+            <a href="" class="modal-phone-link"><p class="modal-phone-number">+38 (099) 12 34 567</p></a>
+
+            <svg class="modal-svg-bottom">
+                <use href="./img/svgs.svg#modal-svg-2"></use>
+            </svg>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>

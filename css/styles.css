@@ -332,6 +332,27 @@ h1, h2, h3, h4, h5, h6, p{
         display: none;
     }
 }
+.header-nav-contacts{
+    @media screen and (max-width: 1439px){
+        display: none;
+    }
+
+    @media screen and (min-width: 1440px){
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+.contacts-nav-menu{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;  
+    color: var(--color-black-text);
+    transition: var(--anim);
+}
+.contacts-nav-menu:hover{
+    color: var(--color-accent);
+}
 /* Burger menu (mobile version) */
 .menu{
     position: fixed;
@@ -899,6 +920,14 @@ h1, h2, h3, h4, h5, h6, p{
 /* Favours section */
 .favours-page-section{
     padding-top: 94px;
+
+    @media screen and (min-width: 768px){
+        padding-top: 177px;
+    }
+
+    @media screen and (min-width: 1440px){
+        padding-top: 193px;
+    }
 }
 .favours-second-title-container{
     position: relative;
@@ -909,6 +938,15 @@ h1, h2, h3, h4, h5, h6, p{
     line-height: 1.2192;
     text-align: center;  
     color: var(--color-black-text);  
+
+    @media screen and (min-width: 768px){
+        font-size: 32px;
+        line-height: 1.219375;
+    }
+
+    @media screen and (min-width: 1440px){
+        font-weight: 700;
+    }
 }
 .favours-second-title{
     position: absolute;
@@ -920,6 +958,16 @@ h1, h2, h3, h4, h5, h6, p{
     left: 50%;
     translate: -50% 0 0;
     z-index: -1;
+
+    @media screen and (min-width: 768px){
+        font-size: 100px;
+        top: -45px;
+    }
+
+    @media screen and (min-width: 768px){
+        font-size: 150px;
+        top: -77px;
+    }
 }
 .card-title-wrapper{
     background-color: var(--color-accent);
@@ -936,18 +984,30 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .favours-page-list{
     margin-top: 40px;
+
+    @media screen and (min-width: 768px){
+        margin-top: 64px;
+    }
+
+    @media screen and (min-width: 1440px){
+        margin-top: 80px;
+    }
 }
 .favours-page-list-item-title{
     font-weight: 700;
     font-size: 20px;
     line-height: 1.219;   
     color: var(--color-white); 
+
+    @media screen and (min-width: 768px){
+        font-size: 24px;  
+    }
 }
 .favours-page-list-item-png{
     border: 3px solid var(--color-accent);
     display: block;
     width: 100%;
-    height: 200px;
+    height: 100%;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
@@ -959,6 +1019,12 @@ h1, h2, h3, h4, h5, h6, p{
     padding-bottom: 40px;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
+    background: linear-gradient(360deg, rgba(87, 87, 87, 0.42) 0%, rgba(87, 87, 87, 0.21) 12.81%, rgba(87, 87, 87, 0) 33.33%, rgba(255, 255, 255, 0) 100%);
+    background-color: var(--color-bg);
+
+    @media screen and (min-width: 768px){
+        padding: 40px;
+    }
 }
 .favours-page-list-item{
     text-align: center;
@@ -971,6 +1037,10 @@ h1, h2, h3, h4, h5, h6, p{
     color: var(--color-black-text); 
     text-align: left;
     margin-left: 20px;
+
+    @media screen and (min-width: 768px){
+        font-size: 20px;  
+    }
 }
 .favours-page-cards-item::before{
     position: absolute;
@@ -978,11 +1048,27 @@ h1, h2, h3, h4, h5, h6, p{
     background-color: var(--color-black-text);
     width: 2px;
     height: 2px;
+    border-radius: 50%;
     left: -10px;
     top: 13px;
+
+    @media screen and (min-width: 768px){
+        width: 3px;
+        height: 3px;
+        top: 18px;
+        left: -14px;
+    }
 }
 .cards-btn{
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: center;
+
+    @media screen and (min-width: 768px){
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1440px){
+        margin-bottom: 80px;
+    }
 }
