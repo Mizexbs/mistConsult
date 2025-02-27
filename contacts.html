@@ -27,7 +27,7 @@
                     </ul>
                 </nav>
 
-                <button class="site-btn" data-modal-open-hero>Замовити послугу</button>
+                <button class="site-btn" data-modal-open>Замовити послугу</button>
             </div>
 
             <button type="button" class="burger-menu-btn js-open-menu" aria-expanded="false">
@@ -78,9 +78,118 @@
         </div>
     </header>
 
-    <main>
+    <main class="contacts-main">
+        <div class="contacts-second-title-container">
+            <h2 class="contacts-main-page-title">Контакти</h2>
+            <span class="contacts-second-title">Контакти</span>
+        </div>
 
+        <div class="container contacts-list-container">
+            <!-- Contacts list -->
+            <ul class="contacts-page-list">
+                <li class="contacts-page-list-item">
+                    <div class="contacts-page-list-item-flex">
+                        <svg class="card-contacts-icon" width="32" height="32">
+                            <use href="./img/svgs.svg#icon-phone"></use>
+                        </svg>
+
+                        <h3 class="contacts-page-list-item-title">Телефон</h3>
+                    </div>
+
+                    <a href="tel:+380951401440" class="contacts-page-list-item-phone-link">+38 095 140 14 40</a>
+                </li>
+
+                <li class="contacts-page-list-item">
+                    <div class="contacts-page-list-item-flex">
+                        <svg class="card-contacts-icon" width="32" height="32">
+                            <use href="./img/svgs.svg#icon-mail"></use>
+                        </svg>
+
+                        <h3 class="contacts-page-list-item-title">Пошта</h3>
+                    </div>
+
+                    <a href="mailto:mist.consult.law@gmail.com" class="contacts-page-list-item-phone-link">mist.consult.law@gmail.com</a>
+                </li>
+
+                <li class="contacts-page-list-item">
+                    <div class="contacts-page-list-item-flex">
+                        <svg class="card-contacts-icon" width="32" height="32">
+                            <use href="./img/svgs.svg#icon-address"></use>
+                        </svg>
+
+                        <h3 class="contacts-page-list-item-title">Адреса</h3>
+                    </div>
+
+                    <a href="#map" class="contacts-page-list-item-phone-link address-link">м. Київ <br> вул. Михайла Омеляновича-Павленка, 13</a>
+                </li>
+            </ul>
+
+            <svg class="map-bg-item">
+                <use href="./img/svgs.svg#logo"></use>
+            </svg>
+
+            <!-- Map -->
+            <div class="map-wrapper">
+                <h2 class="map-title">Знайдіть нас на мапі</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.2562249971534!2d30.542427592546588!3d50.436327915133646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf002477cfdf%3A0xb251e803e30b5c1c!2sOmelyanovycha%20Pavlenka%2013!5e0!3m2!1sru!2sua!4v1740502592045!5m2!1sru!2sua" class="contacts-map-iframe" id="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="container">
+            <div class="form-container">
+                <svg class="form-svg-top">
+                    <use href="./img/svgs.svg#modal-svg"></use>
+                </svg>
+
+                <h2 class="modal-title">Зацікавили послуги?</h2>
+                <p class="modal-moto">Введіть ваші контактні дані та ми <br> вам зателефонуєм</p>
+
+                <form action="#" class="modal-form">
+                    <input type="username" placeholder="Ваше ім'я" class="modal-input">
+                    <input type="phone" placeholder="+38 (ХХХ) ХХ ХХ" class="modal-input">
+
+                    <button class="site-btn modal-window-btn">Замовити дзвінок</button>
+                </form>
+
+                <p class="contacts-moto">або зателефонуйте нам</p>
+                <a href="" class="modal-phone-link"><p class="modal-phone-number">+38 (099) 12 34 567</p></a>
+
+                <svg class="form-svg-bottom">
+                    <use href="./img/svgs.svg#modal-svg-2"></use>
+                </svg>
+            </div>
+        </div>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="all-rights-reserved">©Mist Consult 2023. All rights reserved</p>
+
+            <ul class="footer-contacts">
+                <li class="footer-contacts-item">
+                    <a href="tel:+380975555555" class="hero-contacts">
+                        <svg class="" width="24" height="24">
+                            <use href="./img/svgs.svg#icon-phone"></use>
+                        </svg>
+                    
+                        <p class="footer-contacts-item">+38 (097) 555 55 55</p>
+                    </a>
+                </li>
+
+                <li class="footer-contacts-item">
+                    <a href="mailto:mistconslat@gmail.com" class="hero-contacts">
+                        <svg class="" width="24" height="24">
+                            <use href="./img/svgs.svg#icon-mail"></use>
+                        </svg>
+                    
+                        <p class="footer-contacts-item">mistconslat@gmail.com</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
@@ -113,8 +222,9 @@
             </svg>
         </div>
     </div>
+
     <!-- Scripts -->
-    <script src="./js/modal.js"></script>
+    <script src="./js/favours-modal.js"></script>
     <script src="./js/menu.js"></script>
 </body>
 </html>
